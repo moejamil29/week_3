@@ -1,0 +1,90 @@
+.airport {
+
+}
+
+.body {
+    overflow: hidden;
+}
+
+.runWay1 {
+    border-top: 200px solid grey;
+    margin-right: -10px;
+    margin-left: -10px;
+}
+
+.lines1 {
+    border: 5px dashed #5b5353;
+    width: 80%;
+    position: absolute;
+    top: 12%;
+    margin-right: -10px;
+    margin-left: -10px;
+}
+
+.fields1 {
+    border-top: 100px solid #6ec576;
+    margin-right: -10px;
+    margin-left: -10px;
+}
+
+.runWay2 {
+    border-top: 200px solid grey;
+    margin-right: -10px;
+    margin-left: -10px;
+}
+
+.lines2 {
+    border: 5px dashed #5b5353;
+    width: 100%;
+    position: absolute;
+    top: 48.5%;
+    margin-right: -10px;
+    margin-left: -10px;
+}
+
+.park {
+    border-bottom: 220px solid #39413e;
+    bottom: 64%;
+    margin-right: -10px;
+    margin-left: -10px;
+}
+
+.fields2{
+    border-top: 100px solid #6ec576;
+    margin-right: -10px;
+    margin-left: -10px;
+}
+
+.Fighter1 {
+    position: absolute;
+    left: 137px;
+    top: -20%;
+    animation-name: fly;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1, 0.01, 1, 0.5);
+}
+
+.Fighter2{
+    position: absolute;
+    left: 800px;
+    top: 17%;
+    animation-name: land;
+    animation-duration: 8s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-timing-function: cubic-bezier(1, 0.01, 1, 0.2);
+    }
+
+@keyframes land {
+    from{transform: translateX(-1100px) rotateX(180deg)scale(0.3)} 
+    to{transform: translateX(6500px) rotateX(90deg)scale(0.03)};
+}
+
+@keyframes fly{
+   from{transform: translateX(-1050px) rotateX(180deg)scale(0.2)} 
+   to{transform: translateX(3500px) rotateX(90deg)scale(0.75)};
+}
+
+
